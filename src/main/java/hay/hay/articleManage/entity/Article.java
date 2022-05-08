@@ -1,5 +1,6 @@
 package hay.hay.articleManage.entity;
 
+import hay.hay.articleManage.Dto.ArticleInDto;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,10 +22,19 @@ public class Article extends BaseEntity<String> {
     @Column(name = "title")
     private String title;
 
-    @Column(name = "content")
+    @Column(name = "content", columnDefinition = "longtext")
     private String content;
 
     @Column(name = "click_time")
-    private Integer clickTime;
+    private Integer clickTime = 0;
+
+    public Article() {
+    }
+
+    public Article(ArticleInDto inDto, User user) {
+        this.user = user;
+        this.title = inDto.getTitle();
+        this.content = inDto.getContent();
+    }
 
 }

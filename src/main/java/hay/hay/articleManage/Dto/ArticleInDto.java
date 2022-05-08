@@ -5,8 +5,6 @@ import lombok.Data;
 @Data
 public class ArticleInDto {
 
-    private String id;
-
     private String title;
 
     private String content;

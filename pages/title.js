@@ -1,4 +1,4 @@
 module.exports = {
-  index: '中小企业报税管理系统',
-  manage: '中小企业报税管理系统'
+  index: '图文阅读管理系统',
+  manage: '图文阅读管理系统'
 }
