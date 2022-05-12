@@ -3,7 +3,7 @@
     <el-header id="userInfo">
       <el-row>
         <el-col :span="2">
-          <img :src="title" />
+          <img :src="title" style="max-height: 4rem; margin-top: 1rem" />
         </el-col>
         <el-col :span="2" :offset="20">
           <el-dropdown @command="handleCommand">
@@ -21,8 +21,8 @@
     <el-main style="height: 100%; padding: 0">
       <el-container>
         <el-aside
-          width="200px"
-          style="background-color: #545c64; min-height: 45rem"
+          width="10rem"
+          style="background-color: #545c64; min-height: 47.5rem"
         >
           <el-row>
             <el-col>
@@ -52,11 +52,12 @@
         </el-main>
       </el-container>
     </el-main>
-    <el-footer>
-        <img :src="wechat" />
-        <p>719510848</p>
-        <img :src="phone" />
-        <p>13042051232</p>
+    <el-footer style="height: 5.2rem">
+      <p>ArHay</p>
+      <img :src="wechat" />
+      <p>719510848</p>
+      <img :src="phone" />
+      <p>13042051232</p>
     </el-footer>
 
     <el-dialog
@@ -250,13 +251,13 @@ export default {
 }
 
 .el-footer img {
-  display:inline-block;
+  display: inline-block;
   width: 1.7rem /* 20/16 */;
   height: 1.7rem;
   text-align: center;
 }
-.el-footer p{
-  display:inline-block;
+.el-footer p {
+  display: inline-block;
   font-size: 1rem;
   color: #ffd04b;
 }

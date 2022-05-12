@@ -31,3 +31,11 @@ export function deleteArticle(id) {
     params: {id}
   })
 }
+
+export function uploadFile(formData) {
+  return request({
+    url: '/article/uploadPicture',
+    method: 'post',
+    data: formData
+  })
+}
